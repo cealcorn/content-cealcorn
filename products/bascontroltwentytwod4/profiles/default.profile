@@ -9,4 +9,4 @@ description: |-
     in the product XCCDF Benchmark during initial scaffolding.
 
 selections:
-    - bascontroltwentytwod4_installed
+    - bascontroltwentytwod4_preferences-dod_root_certificate_installed
