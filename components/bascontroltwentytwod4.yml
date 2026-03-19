@@ -1,0 +1,5 @@
+name: bascontroltwentytwod4
+packages:
+- bash
+rules:
+- bascontroltwentytwod4_installed
