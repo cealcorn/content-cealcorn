@@ -1,0 +1,5 @@
+name: bascontrol22d4
+packages:
+- bash
+rules:
+- bascontrol22d4_preferences-dod_root_certificate_installed
