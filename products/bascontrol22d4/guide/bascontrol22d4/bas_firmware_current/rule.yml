@@ -1,0 +1,27 @@
+documentation_complete: true
+
+title: 'Maintain BAScontrol22D on a Current Approved Firmware Revision'
+
+description: |-
+    BAScontrol22D displays its firmware revision on the main interface and in
+    <tt>System Status</tt>. The controller should be maintained on a current,
+    approved firmware revision.
+
+rationale: |-
+    Firmware updates address product defects and security vulnerabilities and help
+    maintain the controller in a supported and defensible state.
+
+severity: medium
+
+references:
+    nist: SI-2,SI-2(2)
+
+ocil_clause: 'the controller firmware is not current or not approved for deployment'
+
+ocil: |-
+    Access the BAScontrol22D web interface and review the displayed firmware revision.
+
+    Compare the installed revision to the currently approved firmware baseline for
+    the deployment or the latest vendor-approved revision in local maintenance guidance.
+
+    If the controller firmware is out of date or not approved for deployment, this is a finding.
