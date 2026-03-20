@@ -11,9 +11,6 @@ rationale: |-
 
 severity: medium
 
-references:
-    nist: AC-3,IA-2
-
 ocil_clause: 'the user cannot log in before taking action'
 
 ocil: |-
