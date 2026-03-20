@@ -2,5 +2,4 @@ name: bascontrol22d4
 packages:
 - bash
 rules:
-- bas_login_before_actions
 - bascontrol22d4_preferences-dod_root_certificate_installed
