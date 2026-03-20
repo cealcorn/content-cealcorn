@@ -150,13 +150,18 @@ def main():
 
     benchmark_cpe_names = get_benchmark_cpe_names(xccdf_el_root_xml)
     cpe_dict = load_cpe_dictionary(benchmark_cpe_names, product_yaml, args.cpe_items_dir)
+    used_cpe_oval_short_def_ids = get_all_cpe_oval_def_ids(
+        xccdf_el_root_xml, cpe_dict, benchmark_cpe_names
+    )
     cpe_dict.translate_cpe_oval_def_ids()
     cpe_dict.to_file(cpe_dict_path, oval_filename)
 
     used_cpe_oval_def_ids = get_all_cpe_oval_def_ids(
         xccdf_el_root_xml, cpe_dict, benchmark_cpe_names
     )
-    oval_document = ssg.build_cpe.get_linked_cpe_oval_document(args.ovalfile)
+    oval_document = ssg.build_cpe.get_linked_cpe_oval_document(
+        args.ovalfile, used_cpe_oval_short_def_ids
+    )
     _save_minimal_cpe_oval(oval_document, oval_file_path, used_cpe_oval_def_ids)
 
     if args.thin_ds_components_dir is not None and args.thin_ds_components_dir != "off":

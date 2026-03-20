@@ -1,0 +1,28 @@
+<def-group>
+  <definition class="inventory"
+  id="installed_app_is_bascontrol22d4" version="1">
+    <metadata>
+      <title>Contemporary Controls BAScontrol22D 4</title>
+      <affected family="unix">
+        <product>Contemporary Controls BAScontrol22D 4</product>
+      </affected>
+      <reference ref_id="cpe:/a:contemporarycontrols:bascontrol22d:4"
+      source="CPE" />
+      <description>The application installed on the system is Contemporary Controls BAScontrol22D 4.</description>
+       </metadata>
+    <criteria operator="AND">
+      <extend_definition comment="Installed OS is part of the Unix family"
+      definition_ref="installed_OS_is_part_of_Unix_family" />
+      <criterion comment="BAScontrol22D 4 is installed"
+      test_ref="test_bascontrol22d4" />
+    </criteria>
+  </definition>
+
+  <linux:rpminfo_test check="all" check_existence="at_least_one_exists" comment="BAScontrol22D 4 is installed via RPM" id="test_bascontrol22d4" version="1">
+    <linux:object object_ref="obj_bascontrol22d4" />
+  </linux:rpminfo_test>
+  <linux:rpminfo_object id="obj_bascontrol22d4" version="1">
+    <linux:name>bascontrol22d4</linux:name>
+  </linux:rpminfo_object>
+
+</def-group>
