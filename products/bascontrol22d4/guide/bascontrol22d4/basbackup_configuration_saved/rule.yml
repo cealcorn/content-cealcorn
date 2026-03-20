@@ -1,0 +1,29 @@
+documentation_complete: true
+
+title: 'Maintain a Known-Good BASbackup Configuration'
+
+description: |-
+    BAScontrol22D provides a <tt>BASbackup</tt> function from the main interface.
+    A known-good backup of the controller configuration should be saved after the
+    device is commissioned and after authorized configuration changes.
+
+rationale: |-
+    Configuration backups support rapid recovery after security incidents,
+    misconfiguration, or device replacement and help restore the controller to a
+    known-good state.
+
+severity: medium
+
+references:
+    nist: CP-9,CP-10
+
+ocil_clause: 'a current BASbackup configuration is not available'
+
+ocil: |-
+    Access the BAScontrol22D main interface and verify that the <tt>BASbackup</tt>
+    function has been used to save a current known-good configuration.
+
+    Review local administrative records or the designated backup repository and
+    confirm that a recent backup exists for the deployed controller.
+
+    If a current BASbackup configuration is not available, this is a finding.
