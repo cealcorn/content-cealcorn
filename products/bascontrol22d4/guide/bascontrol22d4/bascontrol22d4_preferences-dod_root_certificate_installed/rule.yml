@@ -21,7 +21,7 @@ identifiers:
     cce: CCE-82056-3
 
 references:
-    nist: IA-5 (2)
+    nist: SC-17
     stigid: FFOX-00-000016
 
 ocil_clause: 'it is not installed'

@@ -1,0 +1,26 @@
+documentation_complete: true
+
+title: 'Change the Default BAScontrol Admin Password'
+
+description: |-
+    The BAScontrol22D web interface allows the local administrative password to be
+    configured under <tt>System Config &gt; Admin</tt>. The default password must be
+    changed to a site-approved value before the controller is placed into service.
+
+rationale: |-
+    Built-in or vendor-default credentials are commonly known and can allow
+    unauthorized administrative access if left unchanged.
+
+severity: high
+
+references:
+    nist: IA-5,IA-5(1)
+
+ocil_clause: 'the BAScontrol22D admin password is still set to the default value'
+
+ocil: |-
+    Access the BAScontrol22D web interface and open <tt>System Config &gt; Admin</tt>.
+    Review the configured administrative account and verify the password has been
+    changed from the vendor-default value to an organization-approved password.
+
+    If the administrative password is still set to the default value, this is a finding.
