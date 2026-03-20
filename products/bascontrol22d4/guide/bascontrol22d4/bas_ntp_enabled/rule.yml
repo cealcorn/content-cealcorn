@@ -13,6 +13,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: AU-8,AU-12
+
 ocil_clause: 'NTP is not enabled or is not configured with an approved time server'
 
 ocil: |-

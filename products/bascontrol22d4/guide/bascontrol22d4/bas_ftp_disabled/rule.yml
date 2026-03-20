@@ -13,6 +13,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: CM-7,SC-7
+
 ocil_clause: 'FTP is enabled on the controller'
 
 ocil: |-

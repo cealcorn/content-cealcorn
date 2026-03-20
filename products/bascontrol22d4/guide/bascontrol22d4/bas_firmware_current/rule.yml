@@ -13,6 +13,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: SI-2,SI-2(2)
+
 ocil_clause: 'the controller firmware is not current or not approved for deployment'
 
 ocil: |-

@@ -14,6 +14,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: CM-7,SC-7
+
 ocil_clause: 'one or more unused BAScontrol22D protocols remain enabled'
 
 ocil: |-

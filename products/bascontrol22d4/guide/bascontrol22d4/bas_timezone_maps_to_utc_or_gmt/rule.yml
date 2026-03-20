@@ -13,6 +13,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: AU-8
+
 ocil_clause: 'the BAScontrol22D timezone is not configured to map to UTC or GMT'
 
 ocil: |-

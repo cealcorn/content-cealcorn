@@ -14,6 +14,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: CM-6,SC-7
+
 ocil_clause: 'the controller is configured to use DHCP for a fixed installation'
 
 ocil: |-

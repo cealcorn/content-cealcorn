@@ -14,6 +14,9 @@ rationale: |-
 
 severity: medium
 
+references:
+    nist: CP-9,CP-10
+
 ocil_clause: 'a current BASbackup configuration is not available'
 
 ocil: |-
