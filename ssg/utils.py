@@ -21,9 +21,7 @@ class SSGError(RuntimeError):
     pass
 
 
-# Match product IDs that end with a numeric version while allowing digits in the
-# product prefix itself, such as bascontrol22d4 -> bascontrol22d + 4.
-PRODUCT_NAME_PARSER = re.compile(r"(.+?)([0-9]+)$")
+PRODUCT_NAME_PARSER = re.compile(r"([a-zA-Z\-]+)([0-9]+)")
 
 
 class VersionSpecifierSet(set):

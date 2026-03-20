@@ -80,26 +80,6 @@ ocp4/profiles/test.profile
 .coverage
 coverage.xml
 
-# Ignore accidental in-source CMake build artifacts
-/cmake/CMakeCache.txt
-/cmake/CMakeFiles/
-/cmake/CPackConfig.cmake
-/cmake/CPackSourceConfig.cmake
-/cmake/CTestTestfile.cmake
-/cmake/Makefile
-/cmake/build_config.yml
-/cmake/cmake_install.cmake
-/cmake/*/
-/build-scripts/CMakeCache.txt
-/build-scripts/CMakeFiles/
-/build-scripts/CPackConfig.cmake
-/build-scripts/CPackSourceConfig.cmake
-/build-scripts/CTestTestfile.cmake
-/build-scripts/Makefile
-/build-scripts/build_config.yml
-/build-scripts/cmake_install.cmake
-/build-scripts/*/
-
 # Trestle specfic
 shared/references/oscal/.trestle/cache
 
