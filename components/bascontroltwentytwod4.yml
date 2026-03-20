@@ -2,4 +2,4 @@ name: bascontroltwentytwod4
 packages:
 - bash
 rules:
-- bascontroltwentytwod4_installed
+- bascontroltwentytwod4_preferences-dod_root_certificate_installed
