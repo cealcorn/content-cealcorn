@@ -459,17 +459,13 @@ def extract_referred_nodes(tree_with_refs, tree_with_ids, attrname):
     return elementlist
 
 
-def get_linked_cpe_oval_document(unlinked_oval_file_path, definition_ids=None):
+def get_linked_cpe_oval_document(unlinked_oval_file_path):
     oval_document = load_oval_document(parse_file(unlinked_oval_file_path))
     oval_document.product_name = os.path.basename(__file__)
 
     references_to_keep = OVALDefinitionReference()
-    definition_ids = set(definition_ids or [])
-
     for oval_def in oval_document.definitions.values():
         if oval_def.class_ != "inventory":
-            continue
-        if definition_ids and oval_def.id_ not in definition_ids:
             continue
         references_to_keep += oval_document.get_all_references_of_definition(
             oval_def.id_
