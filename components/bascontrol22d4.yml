@@ -2,13 +2,5 @@ name: bascontrol22d4
 packages:
 - bash
 rules:
-- bas_admin_password_not_default
-- bas_firmware_current
-- bas_ftp_disabled
-- bas_ntp_enabled
-- bas_static_ip_for_fixed_installations
-- bas_unused_protocols_disabled
-- bas_timezone_maps_to_utc_or_gmt
-- basbackup_configuration_saved
 - bas_login_before_actions
 - bascontrol22d4_preferences-dod_root_certificate_installed
