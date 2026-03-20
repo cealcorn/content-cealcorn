@@ -1,0 +1,26 @@
+documentation_complete: true
+
+title: 'Use a Static IP Address for Fixed BAScontrol22D Installations'
+
+description: |-
+    BAScontrol22D provides an <tt>IP Mode</tt> setting under
+    <tt>System Config &gt; Wired/IP</tt>. For fixed installations, the controller
+    should use a static IP configuration rather than DHCP.
+
+rationale: |-
+    Static addressing supports predictable network management, simplifies access
+    control policy enforcement, and reduces the risk of unexpected address changes
+    on operational technology networks.
+
+severity: medium
+
+ocil_clause: 'the controller is configured to use DHCP for a fixed installation'
+
+ocil: |-
+    Access the BAScontrol22D web interface and open <tt>System Config &gt; Wired/IP</tt>.
+
+    Review the <tt>IP Mode</tt> setting. For fixed installations, verify it is set to
+    <tt>STATIC</tt> and that the configured address, netmask, and gateway values match
+    the approved network design.
+
+    If a fixed installation is configured for <tt>DHCP</tt>, this is a finding.

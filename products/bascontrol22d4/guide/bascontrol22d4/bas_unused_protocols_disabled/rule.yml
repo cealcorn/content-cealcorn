@@ -1,0 +1,27 @@
+documentation_complete: true
+
+title: 'Disable Unused BAScontrol22D Protocols'
+
+description: |-
+    BAScontrol22D exposes protocol toggles under
+    <tt>System Config &gt; Admin &gt; Enable Protocol</tt>. Only protocols required
+    for the deployment should remain enabled.
+
+rationale: |-
+    Disabling unused protocols reduces attack surface and limits exposure of
+    management and automation interfaces to only those services required for
+    operation.
+
+severity: medium
+
+ocil_clause: 'one or more unused BAScontrol22D protocols remain enabled'
+
+ocil: |-
+    Access the BAScontrol22D web interface and open <tt>System Config &gt; Admin</tt>.
+
+    In the <tt>Enable Protocol</tt> section, review the configured protocol set,
+    including BACnet/IP, Sedona, BACnet MS/TP, Modbus, Wall Setter, and FTP when present.
+
+    Verify that only the protocols required for the approved deployment remain enabled.
+
+    If unnecessary protocols remain enabled, this is a finding.
